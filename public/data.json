@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Ocean view",
+        "img": "https://i.ibb.co/gd9xBZ4/child-Support.png",
+        "btnClr": "#FFBD3E"
+    },
+    {
+        "id": 2,
+        "title": "Pool view",
+        "img": "https://i.ibb.co/F82NCfw/refuse-Shelter.png",
+        "btnClr": "#FF7044"
+    },
+    {
+        "id": 3,
+        "title": "Suites",
+        "img": "https://i.ibb.co/HpRP3kn/food-Charity.png",
+        "btnClr": "#3F90FC "
+    },
+    {
+        "id": 4,
+        "title": "Family rooms",
+        "img": "https://i.ibb.co/Cwhgk9P/cloth-Swap.png",
+        "btnClr": "#421FCF"
+    },
+    {
+        "id": 5,
+        "title": "Sofa bed",
+        "img": "https://i.ibb.co/RvdgFxZ/river-Clean.png",
+        "btnClr": "#421FCF"
+    },
+    {
+        "id": 6,
+        "title": "Pool",
+        "img": "https://i.ibb.co/yVkKCCY/clean-Water.png",
+        "btnClr": "#3F90FC"
+    },
+    {
+        "id": 7,
+        "title": "Bar / lounge",
+        "img": "https://i.ibb.co/3dTJv44/good-Education.png",
+        "btnClr": "#FFBD3E"
+    },
+    {
+        "id": 8,
+        "title": "Beach view",
+        "img": "https://i.ibb.co/KL0bb38/newBooks.png",
+        "btnClr": "#FF7044"
+    },
+    {
+        "id": 9,
+        "title": "Bath / shower",
+        "img": "https://i.ibb.co/9wnVkTr/study-Group.png",
+        "btnClr": "#FFBD3E"
+    },
+    {
+        "id": 10,
+        "title": "Air conditioning",
+        "img": "https://i.ibb.co/Nn2Qykf/bird-House.png",
+        "btnClr": "#FFBD3E"
+    },
+    {
+        "id": 11,
+        "title": "Desk",
+        "img": "https://i.ibb.co/wK6Z1kV/library-Books.png",
+        "btnClr": "#FF7044"
+    },
+    {
+        "id": 12,
+        "title": "Blackout curtains",
+        "img": "https://i.ibb.co/PWhMLkj/drive-Safety.png",
+        "btnClr": "#3F90FC"
+    }
+]
