@@ -7,7 +7,7 @@ const Header = () => {
     const {user, logOut} = useAuth();
     return (
         <Container fluid className="px-0">
-            <Navbar bg="danger" variant="dark" expand="lg">
+            <Navbar className="bg-gradient" bg="danger" variant="dark" expand="lg">
                 <Container>
                     <Link to="/home">
                         <Navbar.Brand><i className="fas fa-dungeon"> Resort Palatial</i></Navbar.Brand>
@@ -23,7 +23,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <Navbar bg="danger" variant="dark" expand="lg" className="border-0 border-top border-3">
+            <Navbar className="bg-gradient" bg="danger" variant="dark" expand="lg" className="border-0 border-top border-3">
                 <Container>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
