@@ -12,7 +12,7 @@ const Home = () => {
     const [offers, setOffers] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/offers')
+        fetch('https://young-everglades-55667.herokuapp.com/offers')
             .then(res => res.json())
             .then(data => setOffers(data));
     }, []);

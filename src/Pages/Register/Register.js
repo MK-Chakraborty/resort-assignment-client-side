@@ -16,13 +16,13 @@ const Register = () => {
 
     const [offer, setOffer] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/offers/${id}`)
+        fetch(`https://young-everglades-55667.herokuapp.com/offers/${id}`)
             .then(res => res.json())
             .then(data => setOffer(data));
     }, [])
 
     const onSubmit = data => {
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://young-everglades-55667.herokuapp.com/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

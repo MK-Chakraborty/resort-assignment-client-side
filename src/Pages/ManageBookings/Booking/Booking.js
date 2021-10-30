@@ -6,19 +6,20 @@ const Booking = ({ booking }) => {
 
     const [offer, setOffer] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/offers/${id}`)
+        fetch(`https://young-everglades-55667.herokuapp.com/offers/${id}`)
             .then(res => res.json())
             .then(data => setOffer(data));
     }, [id])
 
     const handleClick = (id) => {
-        fetch(`http://localhost:5000/bookings/${id}`, {
+        fetch(`https://young-everglades-55667.herokuapp.com/bookings/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
             .then(result => {
                 if (result.deletedCount) {
-                    alert('One Booking Deleted') 
+                    alert('One Booking Deleted');
+                    window.location.reload()
                 }
             });
     }

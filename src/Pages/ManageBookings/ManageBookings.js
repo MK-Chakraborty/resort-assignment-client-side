@@ -5,7 +5,7 @@ import Booking from './Booking/Booking';
 const ManageBookings = () => {
     const [bookings, setBookings] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/bookings')
+        fetch('https://young-everglades-55667.herokuapp.com/bookings')
         .then(res => res.json())
         .then(data => setBookings(data));
     },[])

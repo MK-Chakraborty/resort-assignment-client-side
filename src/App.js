@@ -10,6 +10,7 @@ import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Register from './Pages/Register/Register';
 import AuthProvider from './context/AuthProvider';
 import ManageBookings from './Pages/ManageBookings/ManageBookings';
+import AddNewService from './Pages/AddNewService/AddNewService';
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/manage">
               <ManageBookings></ManageBookings>
+            </PrivateRoute>
+            <PrivateRoute path="/addService">
+              <AddNewService></AddNewService>
             </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
