@@ -50,7 +50,7 @@ const Home = () => {
                 <h2 className="fs-2 fw-bold pb-5"><span className="border-0 border-bottom border-3 border-danger">ALL OFFERS</span></h2>
                 <div className="d-flex flex-wrap justify-content-around my-5">
                     {
-                        offers.map(offer => <Offer key={offer.id} offer={offer}></Offer>)
+                        offers.map(offer => <Offer key={offer._id} offer={offer}></Offer>)
                     }
                 </div>
 

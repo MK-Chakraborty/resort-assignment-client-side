@@ -12,7 +12,7 @@ const Offer = ({offer}) => {
                 <h6>{offer.desp.slice(0,150)} ... </h6>
             </Card.Body>
             <Card.Footer>
-                <NavLink to={`/register/${offer.title}`} className="text-decoration-none"><Card.Title className="text-white"><span className="border-0 border-bottom border-secondery border-3">Book Now</span></Card.Title></NavLink>
+                <NavLink to={`/register/${offer._id}`} className="text-decoration-none"><Card.Title className="text-white"><span className="border-0 border-bottom border-secondery border-3">Book Now</span></Card.Title></NavLink>
             </Card.Footer>
         </Card>
     );

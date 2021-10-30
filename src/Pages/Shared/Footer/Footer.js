@@ -10,7 +10,7 @@ const Footer = () => {
                     <Col xs={12} sm={12} md={6} lg={4} className="d-flex align-items-center">
                         <div>
                             <h2 className="lh-lg"><i className="fas fa-dungeon"> Resort Palatial</i></h2>
-                            <h6>Cpoyright <i class="far fa-copyright"></i> Protected.</h6>
+                            <h6>Cpoyright <i className="far fa-copyright"></i> Protected.</h6>
                         </div>
                     </Col>
                     <Col xs={12} sm={12} md={6} lg={4} className="text-start">
@@ -25,10 +25,10 @@ const Footer = () => {
                         <h5>Contact</h5>
                         <h6>Book Online or, Call: </h6>
                         <Link to="/" className="text-decoration-none text-white"><h6>8 994 3 Palatial (+8 665 114 32)</h6></Link>
-                        <div class="d-flex mt-5">
-                        <Link to="/" className="text-decoration-none text-white me-5"><h3><i class="fab fa-facebook-square"></i></h3></Link>
-                        <Link to="/" className="text-decoration-none text-white me-5"><h3><i class="fab fa-twitter-square"></i></h3></Link>
-                        <Link to="/" className="text-decoration-none text-white me-5"><h3><i class="fab fa-instagram-square"></i></h3></Link>
+                        <div className="d-flex mt-5">
+                        <Link to="/" className="text-decoration-none text-white me-5"><h3><i className="fab fa-facebook-square"></i></h3></Link>
+                        <Link to="/" className="text-decoration-none text-white me-5"><h3><i className="fab fa-twitter-square"></i></h3></Link>
+                        <Link to="/" className="text-decoration-none text-white me-5"><h3><i className="fab fa-instagram-square"></i></h3></Link>
                         </div>
                     </Col>
                 </Row>
