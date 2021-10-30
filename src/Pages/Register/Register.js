@@ -22,16 +22,19 @@ const Register = () => {
     }, [])
 
     const onSubmit = data => {
-        // fetch('http://localhost:5000/offers', {
-        //     method: 'POST',
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(data)
-        // })
-        //     .then(res => res.json())
-        //     .then(result => console.log(result));
-        console.log(data)
+        fetch('http://localhost:5000/bookings', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(result => {
+                if(result.insertedId) {
+                    alert('Congratulation!!! Your Payment Is Complete. Please provide your ID at reception while check in. Thank You!')
+                }
+            });
     };
 
     const btnColor = offer.btnClr;
@@ -56,9 +59,13 @@ const Register = () => {
                         <form onSubmit={handleSubmit(onSubmit)} className="d-flex flex-column">
                             <input {...register("fullName", { required: true, maxLength: 100 })} value={user.displayName} placeholder="Full Name" className="border-0 border-bottom border-3 fs-6 fw-bold" />
                             <input type="email" {...register("email", { required: true })} value={user.email} placeholder="Email" className="border-0 border-bottom border-3 fs-6 fw-bold" />
-                            <input type="text" {...register("date", { min: 18, max: 99 })} value={today} placeholder="Date" className="border-0 border-bottom border-3 fs-6 fw-bold" />
+                            <input type="text" {...register("date")} value={today} placeholder="Date" className="border-0 border-bottom border-3 fs-6 fw-bold" />
+                            <label htmlFor="checkInDate" className="text-start ps-3 fw-bold text-secondary">Check In Date</label>
+                            <input type="date" {...register("check in", { required: true})} id="checkInDate" className="border-0 border-bottom border-3 fs-6 fw-bold" />
+                            <label htmlFor="checkOutDate" className="text-start ps-3 fw-bold text-secondary">Check Out Date</label>
+                            <input type="date" {...register("check out", { required: true})} id="checkOutDate" className="border-0 border-bottom border-3 fs-6 fw-bold" />
                             <input {...register("message", { maxLength: 300 })} placeholder="Special Requirements" className="border-0 border-bottom border-3 fs-6 fw-bold" />
-                            <input {...register("transactionID", { maxLength: 300 })} placeholder="Transaction ID" className="border-0 border-bottom border-3 fs-6 fw-bold" />
+                            <input {...register("transactionID", { required: true, maxLength: 100 })} placeholder="Transaction ID" className="border-0 border-bottom border-3 fs-6 fw-bold" />
                             <input {...register("serviceId", { maxLength: 300 })} value={id} placeholder="Service Id" className="border-0 border-bottom border-3 fs-6 fw-bold" />
                             <input type="submit" value="Book Now" className="bg-danger bg-gradient text-white fs-5 fw-bold rounded mt-3" />
                         </form>
