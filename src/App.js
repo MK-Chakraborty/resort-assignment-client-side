@@ -9,6 +9,7 @@ import SignIn from './Pages/SignIn/SignIn';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Register from './Pages/Register/Register';
 import AuthProvider from './context/AuthProvider';
+import ManageBookings from './Pages/ManageBookings/ManageBookings';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
             </Route>
             <PrivateRoute path="/register/:id">
               <Register></Register>
+            </PrivateRoute>
+            <PrivateRoute path="/manage">
+              <ManageBookings></ManageBookings>
             </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>

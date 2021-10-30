@@ -61,9 +61,9 @@ const Register = () => {
                             <input type="email" {...register("email", { required: true })} value={user.email} placeholder="Email" className="border-0 border-bottom border-3 fs-6 fw-bold" />
                             <input type="text" {...register("date")} value={today} placeholder="Date" className="border-0 border-bottom border-3 fs-6 fw-bold" />
                             <label htmlFor="checkInDate" className="text-start ps-3 fw-bold text-secondary">Check In Date</label>
-                            <input type="date" {...register("check in", { required: true})} id="checkInDate" className="border-0 border-bottom border-3 fs-6 fw-bold" />
+                            <input type="date" {...register("check_in", { required: true})} id="checkInDate" className="border-0 border-bottom border-3 fs-6 fw-bold" />
                             <label htmlFor="checkOutDate" className="text-start ps-3 fw-bold text-secondary">Check Out Date</label>
-                            <input type="date" {...register("check out", { required: true})} id="checkOutDate" className="border-0 border-bottom border-3 fs-6 fw-bold" />
+                            <input type="date" {...register("check_out", { required: true})} id="checkOutDate" className="border-0 border-bottom border-3 fs-6 fw-bold" />
                             <input {...register("message", { maxLength: 300 })} placeholder="Special Requirements" className="border-0 border-bottom border-3 fs-6 fw-bold" />
                             <input {...register("transactionID", { required: true, maxLength: 100 })} placeholder="Transaction ID" className="border-0 border-bottom border-3 fs-6 fw-bold" />
                             <input {...register("serviceId", { maxLength: 300 })} value={id} placeholder="Service Id" className="border-0 border-bottom border-3 fs-6 fw-bold" />
